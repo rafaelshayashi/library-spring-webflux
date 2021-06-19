@@ -1,0 +1,17 @@
+version: "3.1"
+
+services:
+  database:
+    image: postgres
+    container_name: db_library
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root@123
+      POSTGRES_DB: library
+    ports:
+    - "5432:5432"
+    volumes:
+    - library_data:/var/lib/postgresql/data
+
+volumes:
+  library_data:

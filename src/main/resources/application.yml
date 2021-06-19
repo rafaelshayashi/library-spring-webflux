@@ -1,0 +1,8 @@
+spring:
+  r2dbc:
+    username: root
+    password: root@123
+    url: r2dbc:postgresql://localhost:5432/library
+  flyway:
+    user: root
+    password: root@123
